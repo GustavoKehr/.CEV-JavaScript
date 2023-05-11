@@ -1,0 +1,45 @@
+Cliente - Nós
+Servidor - Dados
+
+Client-Side {
+    Website {
+        Jornalista (HTML) {
+            Conteudo
+        }
+        Design (CSS) {
+            Estilo
+        }
+        Programador (JS) {
+            Interacao
+        }
+    }
+}
+
+--
+
+Recomendacoes de livros {
+    JavaScript - O guia definitivo - David Flanagan;
+
+    JavaScript - Guia do Programador - Mauricio Samy Silva;
+
+    Guia de referencia Mozilla: url(https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference);
+
+    Guia de referencia ECMA: url(https://www.ecma-international.org/publications-and-standards/standards/ecma-262/);
+}
+
+Data Types {
+	number
+		infinity
+		NaN
+	string
+	boolean
+	null
+	undefined
+	object
+		Array
+	function
+}
+
+TypeOf para ver o DataType de determinada coisa
+
+
