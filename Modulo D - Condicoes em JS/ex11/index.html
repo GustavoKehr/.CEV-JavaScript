@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto</title>
+</head>
+<body>
+    <h1>Veja se vc pode votar, se é obrigatório ou opcional aqui!!</h1>
+    Digite sua idade: <input type="number" name="txti" id="txti">
+    <input type="button" value="Verificar" onclick="verify()">
+    <div id="resultado"></div>
+
+    <script>
+        function verify() {
+            var txtidade = window.document.getElementById('txti')
+            var res = window.document.getElementById('resultado')
+            var idade = (txtidade.value);
+            
+            res.innerHTML = `Sua idade é de ${idade} anos.`
+
+            if (idade < 16) {
+                res.innerHTML += `Voce ainda nao pode votar!` 
+            } else if (idade < 18 || idade >= 65){
+                res.innerHTML += `O seu voto é opcional!` 
+            } else {
+                res.innerHTML += `O seu voto é obrigatório!`
+            }
+        }
+    </script>
+</body>
+</html>
