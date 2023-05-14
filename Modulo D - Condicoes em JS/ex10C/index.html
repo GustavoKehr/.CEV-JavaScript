@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigracao</title>
+    <style>
+        h1 {
+            text-align: center;
+            line-height: 1.2em;
+        }    
+    </style>
+</head>
+<body>
+    <h1>DEPARTAMENTO DE IMIGRACAO</h1>
+    Digite seu pais:  <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+    <script>
+
+        function verificar() {
+
+            var inPais = window.document.getElementById('txtpais')
+
+            var res = window.document.getElementById('resultado')
+
+            var pais = (inPais.value);
+
+            res.innerHTML = `<p>Seu pais é ${pais}`
+
+            if (pais == 'Brasil'  ) {
+                res.innerHTML += `<p>Voce é <strong>Brasileiro!</strong></p>`
+            } else {
+                res.innerHTML += `<p>Voce é estrangeiro.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

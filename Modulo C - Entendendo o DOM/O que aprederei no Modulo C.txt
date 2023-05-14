@@ -1,0 +1,15 @@
+. Document Object Model (DOM) Ferramenta dentro do navegador para o tratamento de componentes visuais.
+
+. Arvore DOM 
+
+Raiz ==  window 
+
+location document history
+           html
+        head body
+   meta tittle | h1 p p div
+                    strong 
+                    
+
+
+. Manipulando DOM

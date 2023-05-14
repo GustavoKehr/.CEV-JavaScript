@@ -1,0 +1,23 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    margin: auto;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+article {
+    padding: 10px;
+}
+
+article > menu > ul > li {
+    display: inline-block;
+}

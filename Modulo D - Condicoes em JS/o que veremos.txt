@@ -1,0 +1,9 @@
+.Condicoes simples (if)
+
+.Estruturas condicionais compostas (if else)
+
+.Condicoes aninhadas (else if)
+
+.Condicoes multiplas (switch case)
+
+.Exercicios propostos

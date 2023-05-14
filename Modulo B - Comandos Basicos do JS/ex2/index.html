@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>//</title>
+    <style>
+        body {
+            background-color: lightpink;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo! </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim qui ratione excepturi, consequuntur nam, vitae illum dolorum quia nisi sequi quaerat consectetur aspernatur sapiente. Beatae nam quibusdam dolorum dolore.</p>
+    <script>
+
+        /* Utilizando parse para forcar um tipo de numero */
+        // var n1 = Number.parseInt(window.prompt('Digite o primeiro número:'));
+        // var n2 = Number.parseInt(window.prompt('Digite o segundo número'));
+
+
+        /* Utilizando apenas Number de deixar com que o js decida qual tipo de numero sai */
+        var n1 = Number(window.prompt('Digite o primeiro número:'));
+        var n2 = Number(window.prompt('Digite o segundo número'));
+
+        var soma = n1 + n2;        
+
+        window.alert('A soma dos valores é de: ' + (soma)) /* Concatenacao */
+        window.alert(`A soma dos valores ${n1} e ${n2} é de ${soma}`) /* Template String (PlaceHolder)*/
+
+
+        /* Para conversao de number para string usamos 
+        String(n)
+        ou 
+        n.toString()
+        */
+    </script>
+</body>
+</html>

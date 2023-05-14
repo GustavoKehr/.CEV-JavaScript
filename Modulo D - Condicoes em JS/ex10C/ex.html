@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 11.1 Js - Curso em Vídeo</title>
+</head>
+<body>
+    <h1>Já estudou hj?</h1>
+    <p>O CARAIO JÁ COLOCOU OS ESTUDOS EM DIA HJ? x</p>
+    (s para sim n para nao) <input type="text" value="" id="txtver"></p>
+    <input type="button" value="VERIFICACAO" onclick="verify()">
+    <div id="res"></div>
+    <script>
+    
+    function verify(){
+            var txtv = window.document.getElementById('txtver')
+            var resv = window.document.getElementById('res')
+            var ver = (txtv.value)
+
+            if (ver == 's') {
+                res.innerHTML = `<p>MEUS PARABENS GAFANHOTO, CONTINUE COM OS ESTUDOS EM DIA!!</p>`
+            } else {
+                res.innerHTML = `<p>SEU MERDA, VAI ESTUDAR!!</p>`
+            }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos ccocm DOM</title>
+    <style>
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+        h1 {
+            font-size: 1.5em;
+            background-color: aqua;
+            color: black;
+            border-radius: 20px;
+            text-align: center;
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <h1>INICIANDO ESTUDOS COM DOM</h1>
+    <p>Aqui vai o resultado</p> <!-- Primeiro elemento p -->
+    <p>aprendendo a usar o <strong>DOM</strong> em JS.</p>
+    <div id="msg">Div id (getElementById)</div>
+    <div name="msg">Div Name (getElementsByName)</div>
+    <div class="msg">Div Class (getElementsByClassName)</div>
+
+</body>
+<script>
+
+    /* TAG NAME */
+    var corpo = window.document.body /* variavel para entrar no corpo */
+    corpo.style.background = 'darkred' /* usando DOM para trocar o background do corpo */
+
+    var p1 = window.document.getElementsByTagName('p')[0] /* Sempre começa no 0 para o primeiro elemento */
+    p1.style.color = 'black' /* Troco a cor da fonte do primeiro paragrafo */
+    p1.style.fontWeight = 'bold'
+    window.document.write('Está escrito assim -> ' + p1.innerText) /* innerText é o texto que está dentro do elemento selecionado */
+
+    var p2 = window.document.getElementsByTagName('p')[1] /* Segundo elemento */
+    window.document.write('<br>Está escrito assim no segundo paragrafo -> ' + p2.innerHTML) 
+    /* ------------------------------------------------------------------------------ */
+
+    /* ID */
+
+    /* Criando variavel d para div */
+    // var d = window.document.getElementById('msg')
+    // d.innerText = 'Estou aguardando'
+    // d.style.background = 'green'
+    
+
+    /* de uma forma sem criar variavel */
+    // window.document.getElementById('msg').innerText = 'Ola!!'
+
+    // QUERYSELECTOR
+
+    var d = window.document.querySelector('div#msg')
+    d.style.background = 'green'
+
+    /* ------------------------------------------------------------------------------------ */
+
+    /* NAME */
+
+    // var d = window.document.getElementsByName('msg')[0]
+    // d.innerText = 'salve quebrada'
+
+    /* ------------------------------------------------------------------------------------ */
+
+    /* CLASS */
+
+    // var d = window.document.getElementsByClassName('msg')[0]
+    // d.innerText = 'classe name'
+
+
+    /* ------------------------------------------------------------------------------------ */
+
+
+    /* SELECTOR */
+
+</script>
+</html>
+
+<!--  ARVORE DOM DO SITE
+        window 
+
+location document history
+        html
+        head body
+    meta tittle | h1 p p div
+                    strong
+-->

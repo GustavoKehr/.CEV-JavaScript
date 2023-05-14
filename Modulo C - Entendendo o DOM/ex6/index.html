@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font: normal 18pt arial;
+        }
+
+        input {
+            font: normal 18pt arial;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        div#resultado {
+            margin-top: 20px;
+        }
+
+        input.som:hover {
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+            
+        }
+    </style>
+    <title>Somando numeros</title>
+</head>
+<body>
+    <h1>SOMANDO VALORES</h1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()" class="som">
+    <div id="resultado">Resultado</div>
+    <script>
+        function somar () {
+            var tn1 = window.document.getElementById('txtn1') /* tn1 (caixa de texto do n1) */
+            var tn2 = window.document.getElementById('txtn2') /* tn2 (caixa de texto do n2) */
+            var res = window.document.getElementById('resultado') /* faz a ligacao com a div#resultado */
+            var n1 = Number(tn1.value) /* guarda o valor recebido da caixa de texto 1 na variavel n1 */
+            var n2 = Number(tn2.value) /* guarda o valor recebido da caixa de texto 2 na variavel n2 */
+            var soma = n1 + n2 /* variavel soma receba o valor de n1 + n2 */
+            res.innerHTML = `A soma dos números ${n1} e ${n2} foi de: <em>${soma}</em>` /* div#resultado mostra o resultado */
+        }
+    </script>
+</body>
+</html>
