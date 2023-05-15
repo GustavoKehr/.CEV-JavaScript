@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: normal 18pt arial;
+}
+
+body {
+    background-color: rgb(248, 207, 131);
+}
+
+header {
+    text-align: center;
+    padding-top: 200px;
+}
+
+header > h1 {
+    font-size: 2em;
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+}
+
+header > h1:hover {
+    color: white;
+    background-color: black;
+    transition: .8s;
+}
+
+main {
+    width: 480px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.466);
+    
+}
+
+section {
+    text-align: center;
+    margin: auto;
+}
+
+section div#msg {
+    padding: 20px;
+    
+}
+
+section > div#foto {
+    padding-bottom: 20px;
+}
+
+footer {
+    padding: 30px 0px 15px 0px;
+    text-align: center;
+}
+
+footer > p {
+    font-style: italic;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: green;
+    font-style: italic;    
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    background-color: black;
+    border-radius: 10px;
+    color: palevioletred;
+    padding: 10px;
+    transition: .5s;
+}
