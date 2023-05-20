@@ -1,4 +1,4 @@
-let amigo = {nome:"José",
+let $amigo = {nome:"José",
 idade: 67, 
 sexo: "M", 
 peso: 76.6, 
