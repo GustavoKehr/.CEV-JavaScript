@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de Números</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <h1>Analisador de Números</h1>
+        <section>
+            <div id="msg">
+                <label for="txtn">Insira números entre (1 - 100): <label>
+                <input type="number" name="txtn" id="txtn">
+                <input type="button" value="Adicionar" onclick="adicionar()" style="margin-top: 10px;">
+            </div>
+
+            <div >
+                <select name="numeros" id="seltab" size = '10'>
+                    <option></option>
+                </select>
+                <br>
+                <input type="button" value="Finalizar" onclick="finalizar()" style="margin-top: 10px;">
+            </div>
+            <div id="res"></div>
+        </section>
+    </main>
+    <footer>
+        <p >GitHub: <a href="https://github.com/gustavokehr" target="_blank">gustavokehr</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
